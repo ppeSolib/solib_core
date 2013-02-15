@@ -27,6 +27,7 @@ $(function(){
 	var clients = {};
 	var cursors = {};
 
+  //to make several sessions communicate
 	var socket = io.connect(url);
 	
 	socket.on('moving', function (data) {
